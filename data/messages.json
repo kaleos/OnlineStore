@@ -1,0 +1,7 @@
+{
+  "login": {
+    "invalidEmailPassword": " Warning: No match for E-Mail Address and/or Password.",
+    "emptyLoginFields": " Warning: No match for E-Mail Address and/or Password.",
+    "exceededLoginAttempts": " Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."
+  }
+}

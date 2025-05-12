@@ -1,0 +1,55 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug All Cucumber Tests",
+      "program": "${workspaceFolder}/node_modules/@cucumber/cucumber/bin/cucumber.js",
+      "args": [
+        "--require",
+        "features/**/*.js",
+        "features/**/*.feature"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Cucumber Tests with Tag",
+      "program": "${workspaceFolder}/node_modules/@cucumber/cucumber/bin/cucumber.js",
+      "args": [
+        "--require",
+        "features/**/*.js",
+        "--tags",
+        "${input:tag}",
+        "features/**/*.feature"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Specific Scenario",
+      "program": "${workspaceFolder}/node_modules/@cucumber/cucumber/bin/cucumber.js",
+      "args": [
+        "--require",
+        "features/**/*.js",
+        "${input:scenario}"
+      ],
+      "console": "integratedTerminal"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "tag",
+      "type": "promptString",
+      "description": "Enter the tag to run (e.g., @smoke)"
+    },
+    {
+      "id": "scenario",
+      "type": "promptString",
+      "description": "Enter the feature file and line number (e.g., features/my_feature.feature:10)"
+    }
+  ]
+}
