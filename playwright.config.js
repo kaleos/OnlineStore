@@ -4,6 +4,7 @@ module.exports = defineConfig({
   baseURL: 'https://ecommerce-playground.lambdatest.io/',
   loginURL: 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login',
   accountURL: 'https://ecommerce-playground.lambdatest.io/index.php?route=account/account',
+  registerURL: 'https://ecommerce-playground.lambdatest.io/index.php?route=account/register',
   timeout: 30000,
   workers: 6,
   retries: 5,
