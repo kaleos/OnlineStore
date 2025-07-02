@@ -34,7 +34,7 @@ class LoginPage {
 
   async isLinksVisible(linkText) {
     const linkLocator = `${this.links}//*[normalize-space(text())="${linkText}"]`
-    return await this.page.isVisible(linkLocator);
+    return await this.page.isVisible(linkLocator)
   }
 
   async emailPasswordLabel() {

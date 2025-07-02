@@ -3,5 +3,17 @@
     "invalidEmailPassword": " Warning: No match for E-Mail Address and/or Password.",
     "emptyLoginFields": " Warning: No match for E-Mail Address and/or Password.",
     "exceededLoginAttempts": " Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."
+  },
+  "register": {
+    "privacyPolicy": " Warning: You must agree to the Privacy Policy!",
+    "firstName": "First Name must be between 1 and 32 characters!",
+    "lastName": "Last Name must be between 1 and 32 characters!",
+    "email": "E-Mail Address does not appear to be valid!",
+    "telephone": "Telephone must be between 3 and 32 characters!",
+    "password": "Password must be between 4 and 20 characters!",
+    "passwordMismatch": "Password confirmation does not match password!",
+    "registrationSuccessful": " Your Account Has Been Created!"
+
   }
+
 }
